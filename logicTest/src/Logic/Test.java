@@ -7,6 +7,7 @@ public class Test {
     public static void main(String[] args) {
         int i;
         String number = "";
+        int[] arrayCifras;
 
         do {
 
@@ -25,7 +26,7 @@ public class Test {
 
             if (numberOfRepetition <= 5) {
 
-                int[] arrayCifras = new int[decimals.length()];
+                arrayCifras = new int[decimals.length()];
 
                 for (i = 0; i < decimals.length(); i++) {
                     arrayCifras[i] = Integer.parseInt(String.valueOf(decimals.charAt(i)));
@@ -36,112 +37,117 @@ public class Test {
 
 
                 for (i = 0; i < decimals.length(); i++) {
-                    switch (arrayCifras[i]) {
-                        case 0: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "   ";
-                            arrayDisplay[i][4] = "|";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
+                    if (arrayCifras[i] <= 5) {
+                        switch (arrayCifras[i]) {
+                            case 0: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "   ";
+                                arrayDisplay[i][4] = "|";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 1: {
+                                arrayDisplay[i][0] = "   ";
+                                arrayDisplay[i][1] = " ";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "   ";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "   ";
+                                break;
+                            }
+                            case 2: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = " ";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = "|";
+                                arrayDisplay[i][5] = " ";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 3: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = " ";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 4: {
+                                arrayDisplay[i][0] = "   ";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = " ";
+                                break;
+                            }
+                            case 5: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = " ";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 6: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = " ";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = "|";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 7: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = " ";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "   ";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "   ";
+                                break;
+                            }
+                            case 8: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = "|";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
+                            case 9: {
+                                arrayDisplay[i][0] = "---";
+                                arrayDisplay[i][1] = "|";
+                                arrayDisplay[i][2] = "|";
+                                arrayDisplay[i][3] = "---";
+                                arrayDisplay[i][4] = " ";
+                                arrayDisplay[i][5] = "|";
+                                arrayDisplay[i][6] = "---";
+                                break;
+                            }
                         }
-                        case 1: {
-                            arrayDisplay[i][0] = "   ";
-                            arrayDisplay[i][1] = " ";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "   ";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "   ";
-                            break;
-                        }
-                        case 2: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = " ";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = "|";
-                            arrayDisplay[i][5] = " ";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
-                        case 3: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = " ";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
-                        case 4: {
-                            arrayDisplay[i][0] = "   ";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = " ";
-                            break;
-                        }
-                        case 5: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = " ";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
-                        case 6: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = " ";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = "|";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
-                        case 7: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = " ";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "   ";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "   ";
-                            break;
-                        }
-                        case 8: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = "|";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
-                        case 9: {
-                            arrayDisplay[i][0] = "---";
-                            arrayDisplay[i][1] = "|";
-                            arrayDisplay[i][2] = "|";
-                            arrayDisplay[i][3] = "---";
-                            arrayDisplay[i][4] = " ";
-                            arrayDisplay[i][5] = "|";
-                            arrayDisplay[i][6] = "---";
-                            break;
-                        }
+                    } else {
+                        System.out.println("Please enter data less than or equal to five digits. Example: 5.12345");
+                        System.exit(0);
                     }
                 }
 
                 for (int j = 0; j < numberOfRepetition; j++) {
-                    System.out.println("Repetition " + (j+1) + " of " + numberOfRepetition);
+                    System.out.println("Repetition " + (j + 1) + " of " + numberOfRepetition);
                     for (i = 0; i < decimals.length(); i++) {
                         System.out.printf(" %s  ", arrayDisplay[i][0]);
                     }
@@ -165,6 +171,7 @@ public class Test {
                     System.out.println("\n");
 
                 }
+
             } else {
                 System.out.println("Enter a number that is equal to or less than five" +
                         "\nre-run the code");
